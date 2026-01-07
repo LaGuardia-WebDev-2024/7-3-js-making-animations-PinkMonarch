@@ -11,8 +11,14 @@ var sunSize = 30;
 draw = function(){
   noStroke(); 
   
+  
+  
+ var x = 1;
+draw = function() {
+    
   // the beautiful blue sky
   background(82, 222, 240);
+   
     
   // The sun, a little circle on the horizon
   fill(255, 204, 0);
@@ -22,9 +28,26 @@ draw = function(){
   fill(76, 168, 67);
   rect(0, 300, 400, 100);
   
-  //ladybug
+  
+  
+  
+    // all lines of code inside here will be run repeatedly
+    
+    //ladybug
+   
   fill(200,0,0);
-  ellipse(10, 350, 10, 10);
+  ellipse(x + 10, 350, 10, 10);
+  fill(0,0,0)
+  ellipse(x + 10, 350, 2, 3); 
+  ellipse(x + 10, 357, 3, 10)
+  ellipse(x + 10, 343, 3, 10)
+ rotate(-.5)
+  ellipse(x + -100, 360, 3, 10)
+  x = x + 1
+
+
+};
+
 }
 
 
